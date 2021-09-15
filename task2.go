@@ -1,4 +1,4 @@
-package mediatel
+package main2
 
 import "fmt"
 
