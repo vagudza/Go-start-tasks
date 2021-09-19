@@ -1,2 +1,2 @@
 # GolangTasks
-Description placed in code
+Description of tasks placed in code
