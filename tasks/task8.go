@@ -1,4 +1,4 @@
-package main
+package tasks
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 /*
 	Task 8. Измените программу так, чтобы цифры от 1 до 9 печатались в консоль по порядку
 */
-func main() {
+func Task8() {
 	c1 := make(chan int)
 	c2 := make(chan int)
 	c3 := make(chan int)

@@ -1,4 +1,4 @@
-package main
+package tasks
 
 import (
 	"fmt"
@@ -12,7 +12,7 @@ func Sleep(n int) {
 	}
 }
 
-func main() {
+func Task7() {
 	// Some code
 	c1 := make(chan string)
 	c2 := make(chan string)

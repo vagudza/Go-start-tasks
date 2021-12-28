@@ -1,4 +1,4 @@
-package main
+package tasks
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ type Expression struct {
 	haveError                  bool
 }
 
-func sum(e *Expression, ch chan Expression) {
+func sum2(e *Expression, ch chan Expression) {
 	e.result = e.operand1 + e.operand2
 	ch <- *e
 }
@@ -45,7 +45,7 @@ func division(e *Expression, ch chan Expression) {
 	ch <- *e
 }
 
-func main() {
+func Task9() {
 	input := `6*6,7-8,2 /  0,1+ 1,2 +4, 2* 2,9/  3,    2  *  8   , 2*f, a8, *, 5f*2,2//2,2++2,6-2`
 
 	// regexp1 - для удаления всех пробелов из строки
@@ -92,7 +92,7 @@ func main() {
 		expression := Expression{operand1: op1, operator: expressionString[operatorIndex], operand2: op2}
 		switch expression.operator {
 		case 43:
-			go sum(&expression, ch)
+			go sum2(&expression, ch)
 		case 42:
 			go multiplication(&expression, ch)
 		case 47:

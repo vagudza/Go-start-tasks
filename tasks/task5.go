@@ -1,4 +1,4 @@
-package main
+package tasks
 
 import (
 	"bufio"
@@ -70,7 +70,7 @@ type Position struct {
 	x, y int
 }
 
-func main() {
+func Task5() {
 	var M, N int
 
 	fmt.Println("Введите M:")

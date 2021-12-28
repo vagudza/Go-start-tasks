@@ -1,8 +1,6 @@
-package main
+package tasks
 
-import (
-	"fmt"
-)
+import "fmt"
 
 /*
 	Task 6. Задачи из курса http://golang-book.ru/
@@ -128,7 +126,7 @@ func totalPerimeter(shapes ...Shape) float32 {
 	return totalPerimeterValue
 }
 
-func main() {
+func Task6() {
 	// 7.1
 	slice := []int{1, 2, 3}
 	fmt.Println(sum(slice))
